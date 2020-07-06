@@ -3,6 +3,8 @@ FROM debian:stretch
 # install debian packages
 ENV DEBIAN_FRONTEND noninteractive
 
+#get the update
+
 RUN apt-get update -qq \
  && apt-get install --no-install-recommends -y \
     # install essentials
